@@ -5,7 +5,7 @@ import './App.css'
 import { DISHES } from './shared/dishes';
 /* Components*/
 import Menu from './components/MenuComponent';
-import DishDetail from './components/DishDetailComponent';
+import DishDetail from "./component/DishDetailComponent";
 
 import './App.css';
 
