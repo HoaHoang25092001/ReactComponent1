@@ -43,12 +43,12 @@ class Menu extends Component {
             in the render() <MenuComponent dishes={}> */
             return (
                 <div key={dish.id} className="col-12 col-md-5 m-1">
-                    {/* <Card onClick={() => this.onDishSelect(dish)}> */}
+                    <Card onClick={() => this.onDishSelect(dish)}>
                         <CardImg width="100%" src={dish.image} alt={dish.name} />
                         <CardImgOverlay>
                             <CardTitle><strong>{dish.name}</strong></CardTitle>
                         </CardImgOverlay>
-                    {/* </Card> */}
+                    </Card>
                 </div>
             );
         });
@@ -63,14 +63,13 @@ class Menu extends Component {
                     {menu}
                 </div>
 
-                {/* col-12 col-md-5 col-lg-5 mr-1 */}
-                <div className="row">
-                     <div className="col-sm-5">
+                <div className="row col-12 col-md-5 col-lg-5 mr-1">
+                     <div className="col-6">
                         <Card>
                             {this.renderDish(this.state.selectedDish)}
                         </Card>
                     </div>
-                    <div className="col-sm-5">
+                    <div className="col-6">
                     <DishDetail selectedDish={this.state.selectedDish} dishes={this.props.dishes} superDish={this.renderDish(this.state.selectedDish)} />  
                     </div>
                 </div>

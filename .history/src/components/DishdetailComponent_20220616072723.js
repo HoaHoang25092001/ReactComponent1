@@ -3,9 +3,9 @@ import { Card, CardText, CardBody } from 'reactstrap';
 
 class DishDetail extends Component {
 
-    // constructor(props) {
-    //     super(props);
-    // }
+    constructor(props) {
+        super(props);
+    }
 
     render() {
         const comentario = this.props.dishes.map((dish, index) => {
@@ -25,7 +25,7 @@ class DishDetail extends Component {
 return (
     <div className="">
             <div className="">
-                <h4>Comments</h4>
+                <h4 className='text-center'>Comments</h4>
                 {comentario}
             </div>
     </div>
