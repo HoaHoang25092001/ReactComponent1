@@ -1,26 +1,26 @@
 import React, { Component } from 'react';
-import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem } from 'reactstrap';
+import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem} from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 
 class Header extends Component {
-   constructor(props) {
-      super(props);
-      
-      this.state = {
-         isNavOpen: false
-      };
-      
-      this.toggleNav = this.toggleNav.bind(this);
-   }
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      isNavOpen: false
+   };
    
-   toggleNav() {
-      this.setState({isNavOpen: !this.state.isNavOpen });
-   }
-   
-   render() {
-      return (
-         <React.Fragment>
-            <Navbar dark expand="md" >
+   this.toggleNav = this.toggleNav.bind(this);
+}
+
+toggleNav() {
+   this.setState({isNavOpen: !this.state.isNavOpen });
+}
+
+  render() {
+    return(
+    <React.Fragment>
+      <Navbar dark expand="md" >
                <div className="container">
                   <div className='row'>
                      <NavbarToggler onClick={this.toggleNav} />
@@ -64,9 +64,9 @@ class Header extends Component {
                   </div>
                </div>              
             </div>
-         </React.Fragment>
-      );
-   }
+    </React.Fragment>
+    );
+  }
 }
 
 export default Header;
