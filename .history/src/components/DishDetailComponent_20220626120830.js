@@ -63,8 +63,12 @@ import { Link } from 'react-router-dom';
 				</div>                
 			</div>
 			<div className="row">
+				<div className="col-sm-6">
 					<RenderDish dish={props.dish} />
+				</div>
+				<div className="col-sm-6">
 					<RenderComments comments={props.comments} />
+				</div>
 			</div>
 			</div>
 		);
