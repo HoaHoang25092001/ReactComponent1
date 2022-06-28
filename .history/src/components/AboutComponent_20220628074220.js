@@ -11,7 +11,7 @@ function RenderLeader({leader}) {
                 </Media>
                 <Media body className="col-12">
                     <Media heading>{leader.name}</Media>
-                    <h6>{leader.designation}</h6>
+                    <p>{leader.designation}</p>
                     <p>{leader.description}</p>
                 </Media>    
             </Media>
