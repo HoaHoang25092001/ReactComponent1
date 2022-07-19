@@ -1,4 +1,4 @@
-import { createStore, combineReducers, applyMiddleware } from 'redux';
+import {createStore, combineReducers, applyMiddleware } from 'redux';
 import { Dishes } from './dishes';
 import { Comments } from './comments';
 import { Promotions } from './promotions';
@@ -22,6 +22,6 @@ export const ConfigureStore = () => {
 
         applyMiddleware(thunk, logger)
     );
-
+    
     return store;
 }

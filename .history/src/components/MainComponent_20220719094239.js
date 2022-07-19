@@ -153,3 +153,10 @@ class Main extends Component {
 }
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Main));
+
+
+/**
+ * 
+ * - connect(): generates a wrapper container component that 
+ *      subscribe to the store.
+ */

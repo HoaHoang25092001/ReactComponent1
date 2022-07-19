@@ -6,7 +6,7 @@ import About from './AboutComponent';
 import Contact from './ContactComponent';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
-import DishDetail from './DishDetailComponent';
+import DishDetail from './DishdetailComponent';
 
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import {connect} from 'react-redux';
@@ -153,3 +153,10 @@ class Main extends Component {
 }
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Main));
+
+
+/**
+ * 
+ * - connect(): generates a wrapper container component that 
+ *      subscribe to the store.
+ */
